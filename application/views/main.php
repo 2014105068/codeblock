@@ -102,7 +102,7 @@
         <div class="row">
             
 		<div class = "col-md-6 col-lg-4">
-			<a class="pic pic-3 d-block mx-auto" href="#">
+			<a class="pic pic-3 d-block mx-auto" href="/intro">
 				<div class="my-auto w-100 text-center text-white">
 				<img src="img/portfolio/intro.png" class="img-fluid" alt="Pic">
 				<span class="pic-caption open-up">

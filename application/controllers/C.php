@@ -5,7 +5,7 @@
 		{
 		  parent::__construct();
 		  //$this->load->database();
-		  //$this->load->helper(array("url", "date"));
+		  $this->load->helper(array("url", "date"));
 		  //$this->load->library('pigination');
 		}
 		

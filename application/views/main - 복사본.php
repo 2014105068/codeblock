@@ -92,8 +92,6 @@
       </div>
     </header>
 
-	
-	
     <!-- Portfolio Grid Section -->
     <section class="portfolio" id="portfolio">
       <div class="container">
@@ -101,78 +99,95 @@
         <hr class="star-dark mb-5">
         <div class="row">
             
-		<div class = "col-md-6 col-lg-4">
-			<a class="pic pic-3 d-block mx-auto" href="#">
-				<div class="my-auto w-100 text-center text-white">
-				<img src="img/portfolio/intro.png" class="img-fluid" alt="Pic">
-				<span class="pic-caption open-up">
-					<h1 class="pic-title">Intro</h1>
-					<p>Intro descritpion</p>
-				</span>
-				</div>
-			</a>
-		</div>
+          <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto" href="#">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fas fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/intro.png" alt="">
+            </a>
+          </div>
             
-         <div class = "col-md-6 col-lg-4">
-			<a class="pic pic-3 d-block mx-auto" href="#">
-				<div class="my-auto w-100 text-center text-white">
-				<img src="img/portfolio/home.png" class="img-fluid" alt="Pic">
-				<span class="pic-caption open-up">
-					<h1 class="pic-title">홈</h1>
-					<p>홈 description</p>
-				</span>
-				</div>
-			</a>
-		</div>
+          <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto" href="#">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fas fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/home.png" alt="">
+            </a>
+          </div>
             
-         <div class = "col-md-6 col-lg-4">
-			<a class="pic pic-3 d-block mx-auto" href="#">
-				<div class="my-auto w-100 text-center text-white">
-				<img src="img/portfolio/community.png" class="img-fluid" alt="Pic">
-				<span class="pic-caption open-up">
-					<h1 class="pic-title">커뮤니티</h1>
-					<p>커뮤니티 description</p>
-				</span>
-				</div>
-			</a>
-		</div>
+          <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto" href="#">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fas fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/community.png" alt="">
+            </a>
+          </div>
             
-		<div class = "col-md-6 col-lg-4">
-			<a class="pic pic-3 d-block mx-auto" href="/c">
-				<div class="my-auto w-100 text-center text-white">
-				<img src="img/portfolio/c.png" class="img-fluid" alt="Pic">
-				<span class="pic-caption open-up">
-					<h1 class="pic-title">C 코딩</h1>
-					<p>C코딩 description</p>
-				</span>
-				</div>
-			</a>
-		</div>
-
-        <div class = "col-md-6 col-lg-4">
-			<a class="pic pic-3 d-block mx-auto" href="#">
-				<div class="my-auto w-100 text-center text-white">
-				<img src="img/portfolio/python.png" class="img-fluid" alt="Pic">
-				<span class="pic-caption open-up">
-					<h1 class="pic-title">파이썬</h1>
-					<p>파이썬 description</p>
-				</span>
-				</div>
-			</a>
-		</div>
-            
-        <div class = "col-md-6 col-lg-4">
-			<a class="pic pic-3 d-block mx-auto" href="#">
-				<div class="my-auto w-100 text-center text-white">
-				<img src="img/portfolio/arduino.png" class="img-fluid" alt="Pic">
-				<span class="pic-caption open-up">
-					<h1 class="pic-title">아두이노</h1>
-					<p>아두이노 description</p>
-				</span>
-				</div>
-			</a>
-		</div>
+          <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto" href="/c">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fas fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/c.png" alt="">
+            </a>
+          </div>
+			
+		<!--팝업 스크립트-->
 		
+		<div class="portfolio-modal mfp-hide" id="c-sign">
+			<div class="portfolio-modal-dialog bg-white">
+				<a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+					<i class="fa fa-3x fa-times"></i>
+				</a>
+				<div class="container text-center">
+					<div class="row">
+						<div class="col-lg-5 col-md-5 mx-auto">
+							<h2 class="text-secondary text-uppercase mb-0">C 블록코딩</h2>
+							<hr class="star-dark mb-5">
+							<img class="img-fluid mb-5" src="img/portfolio/c.png" alt="">
+							<p class="mb-5">블록코딩을 통해 손쉬운 코딩을 만나보세요! </p>
+							<a class="btn btn-primary btn-lg rounded-pill" href="/c">
+								<i class="fa fa-close"></i>
+								바로가기</a>
+							<p> </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			
+          <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto" href="#">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fas fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/python.png" alt="">
+            </a>
+          </div>
+            
+          <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto" href="#">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fas fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/arduino.png" alt="">
+            </a>
+          </div>
         </div>
       </div>
     </section>

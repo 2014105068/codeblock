@@ -4,7 +4,7 @@
         <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Layout App V2 | SensationApp - Responsive admin template.</title>
+        <title> EasyBlock|C코딩</title>
         <link rel="shortcut icon" href="img/favicon.ico">
         <!--STYLESHEET-->
         <!--=================================================-->
@@ -44,7 +44,7 @@
                     <!--Brand logo & name-->
                     <!--================================-->
                     <div class="navbar-header">
-                        <a href="index.html" class="navbar-brand">
+                        <a href="/main" class="navbar-brand">
                             <i class="fa fa-cube brand-icon"></i>
                             <div class="brand-title">
                                 <span class="brand-text">EasyBlock</span>
@@ -101,7 +101,7 @@
                             <li id="dropdown-user" class="dropdown">
                                 <a href="#" data-toggle="dropdown" class="dropdown-toggle text-right">
                                     <span class="pull-right"> <img class="img-circle img-user media-object" src="img/av1.png" alt="Profile Picture"> </span>
-                                    <div class="username hidden-xs">John Doe</div>
+                                    <div class="username hidden-xs">젤라또</div>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right with-arrow">
                                     <!-- User dropdown menu -->
@@ -143,7 +143,7 @@
                     <!--Page Title-->
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <div class="pageheader">
-                        <h3><i class="fa fa-home"></i> C bolck coding </h3>
+                        <h3><i class="fa fa-home"></i> C block coding </h3>
                       <!--  <div class="breadcrumb-wrapper">
                             <span class="label">You are here:</span>
                             <ol class="breadcrumb">
@@ -174,22 +174,41 @@
                                             </ul>
                                             <!--Tabs Content-->
                                             <div class="tab-content">
+                                                
                                                 <div id="demo-lft-tab-1" class="tab-pane fade active in">
+                                                    <!-- 화살표 넣음 -->
+                                                    <table>
+                                                        <tr>
+                                                            <div class="draggable" id="state-for" style="position:relative;">
+                                                                <img src="assets/Forblock01.png" width="200" height="30" alt="화살표">
+                                                                <div style="position:absolute; top:0px; left:10px;">
+                                                                    <input type="text" id="for_value" style="width:20px;">번만큼 for문 반복
+                                                                </div>
+                                                            </div>
+                                                        </tr>
+                                                        <tr>
+                                                            <div class="draggable" id="state-if" style="position:relative;">
+                                                                <img src="assets/ifblock01.png" width="200" height="30" alt="오함마">
+                                                                <div style="position:absolute; top:5px; left:5px;">
+                                                                    <input type="text" id="if_value" style="width:20px;">if조건
+                                                                </div>
+                                                            </div>
+                                                        </tr>
+                                                </table>    
                                                     <div id="demo-tab-scroll">
-                                                        <h4 class="text-thin">변수변수</h4>
-                                                        
+<!--                                                        <h4 class="text-thin">변수변수</h4>     -->
                                                     </div>
                                                 </div>
+                                                
                                                 <div id="demo-lft-tab-2" class="tab-pane fade">
                                                     <div id="demo-tab-scroll-2">
                                                         <h4 class="text-thin">반복반복</h4>
-                                                        
                                                     </div>
                                                 </div>
+                                                
                                                 <div id="demo-lft-tab-3" class="tab-pane fade">
                                                     <div id="demo-tab-scroll-3">
                                                         <h4 class="text-thin">제어문</h4>
-                                                        
                                                     </div>
                                                 </div>
                                             </div>
@@ -200,48 +219,15 @@
                                    
                                 </div>
                             </div>
-                             <div class="col-lg-6">
-                                <div id="appscrolldiv3">
-                                    <p>block놓을 곳</p>
-                                    <p>&nbsp;</p>
-                                    <p>&nbsp;</p>
-                                    <p>&nbsp;</p>
-                                    <p>&nbsp;</p>
-                                    <p>&nbsp;</p>
-                                    <p>&nbsp;</p>
-                                    <p>&nbsp;</p>
-                                    <p>&nbsp;</p>
-                                    <p>&nbsp;</p>
-                                    <p>&nbsp;</p>
-                                    <p>&nbsp;</p>
-                                    <p>&nbsp;</p>
-                                    <p>&nbsp;</p>
-                                    <p>&nbsp;</p>
-                                    <p>&nbsp;</p>
-                                    <p>&nbsp;</p>
-                                    <p>&nbsp;</p>
-                                    <p>&nbsp;</p>
-                                    <p>&nbsp;</p>
-                                    <p>&nbsp;</p>
-                                    <p>&nbsp;</p>
-                                    <p>&nbsp;</p>
-                                    <p>&nbsp;</p>
-                                    <p>&nbsp;</p>
-                                    <p>&nbsp;</p>
-                                    <p>&nbsp;</p>
-                                    <p>&nbsp;</p>
-                                    <p>&nbsp;</p>
-                                    <p>&nbsp;</p>
-                                    <p>&nbsp;</p>
-                                    <p>&nbsp;</p>
-                                    <p>&nbsp;</p>
-                                    <p>&nbsp;</p>
-                                    <p>&nbsp;</p>
-                                    <p>&nbsp;</p>
-                                    <p>&nbsp;</p>
-                                    <p>&nbsp;</p>
-                                    <p>You got the bottom</p>
+                             <div class="col-lg-6" style="height:800px; background-color:#fff;">
+                                <div class="tab-base" style="float:left; background-color:#ccf; width:50%; height:100%;">
+<!--                           id값 임시저장         appscrolldiv3-->
+                                    <h5 class="panel-title" id="problem"> <p>문제. 밑의 숫자가 나오도록 블럭을 옮기세요.</p><p>1</p><p>12</p><p>123</p><p>1234</p><p>12345</p> </h5>
+                                    
                                 </div>
+                                 <div id="droppable_item" style="float:left; background-color:#d0d; width:50%; height:100%">
+                                     
+                                 </div>
                             </div>
                             <div class="col-lg-3">
                                 <div class="panel">
@@ -251,38 +237,6 @@
                                     <div class="panel-body">
                                         <div id="appscrolldiv">
                                             
-                                            <p>&nbsp;</p>
-                                            <p>&nbsp;</p>
-                                            <p>&nbsp;</p>
-                                            <p>&nbsp;</p>
-                                            <p>&nbsp;</p>
-                                            <p>&nbsp;</p>
-                                            <p>&nbsp;</p>
-                                            <p>&nbsp;</p>
-                                            <p>&nbsp;</p>
-                                            <p>&nbsp;</p>
-                                            <p>&nbsp;</p>
-                                            <p>&nbsp;</p>
-                                            <p>&nbsp;</p>
-                                            <p>&nbsp;</p>
-                                            <p>&nbsp;</p>
-                                            <p>&nbsp;</p>
-                                            <p>&nbsp;</p>
-                                            <p>&nbsp;</p>
-                                            <p>&nbsp;</p>
-                                            <p>&nbsp;</p>
-                                            <p>&nbsp;</p>
-                                            <p>&nbsp;</p>
-                                            <p>&nbsp;</p>
-                                            <p>&nbsp;</p>
-                                            <p>&nbsp;</p>
-                                            <p>&nbsp;</p>
-                                            <p>&nbsp;</p>
-                                            <p>&nbsp;</p>
-                                            <p>&nbsp;</p>
-                                            <p>&nbsp;</p>
-                                            <p>&nbsp;</p>
-                                            <p>&nbsp;</p>
                                             <p>&nbsp;</p>
                                             <p>You got the bottom</p>
                                         </div>
@@ -704,7 +658,18 @@
         <!--Switchery [ OPTIONAL ]-->
         <script src="plugins/switchery/switchery.min.js"></script>
         <!--Jquery Steps [ OPTIONAL ]-->
-
+        <!--       내가 추가한 js <드래그앤드랍용> -->
+        <script src="js/popper.min.js"></script>
+        <script src="js/jquery-ui/jquery-ui.js"></script>
+        <script src="js/jquery-ui/jquery-ui.css"></script>
+        <script src="js/jquery-ui/jquery-ui.min.js"></script>
+            
+        <!--    그 외 jQWidgets 관련     -->
+        <script src="js/jqwidget/jqwidgets/jqxcore.js"></script>
+        <script src="js/jqwidget/jqwidgets/jqxdocking.js"></script>
+        <script src="js/jqwidget/jqwidgets/jqxwindow.js"></script>
+        <!--            -->
+            
         <script src="plugins/parsley/parsley.min.js"></script>
         <!--Jquery Steps [ OPTIONAL ]-->
         <script src="plugins/jquery-steps/jquery-steps.min.js"></script>
@@ -724,5 +689,105 @@
         <script src="js/demo/layout-app-v2.js"></script>
         <!--Demo script [ DEMONSTRATION ]-->
         <script src="js/demo/jasmine.js"></script>
+            
+        <script>
+        var num = 1;
+        $( function() {
+            $( ".draggable" ).draggable({
+                    stack: ".draggable",
+                    revert: "invalid",
+                    cursor: "move",
+                    helper: "clone",
+                    containment: "document"
+            });
+        
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//         $( "#appscrolldiv3" ).droppable({
+//                accept: "#test_drag1",
+//                drop: function(event, ui){
+//                    $(ui.draggable).clone(true).css({
+//                        position: 'relative',
+//                        top: 'auto',
+//                        left: 'auto'
+//                    });
+//                    $("#appscrolldiv").append("for i in range 10 ");
+//                },
+//                hoverClass: "drop-hover"
+//            });
+//        });
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            $("#droppable_item").droppable({
+                accept: ".draggable",
+                drop:function(event,ui){
+                    var $canvas = $(this);
+                     var for_val = $("#for_value").val();
+                    var input = '';
+                    var currentId = ui.draggable.prop('id');
+                   
+                    accept: ".draggable";
+                    if(!ui.draggable.hasClass('canvas-element')){
+                        var $canvasElement = ui.draggable.clone();
+                        //클론 id를 만들어 클릭 이벤트 구분하기
+                        var $cloneId = $canvasElement.prop('id', 'clone-for'+ (num++));
+                    
+                        var clone_for = $('#droppable_item').find("[id^=clone-for1]");
+                        if(clone_for.length > 0){
+                            
+                            input = "&nbsp;&nbsp;&nbsp;&nbsp; for i in range (" + for_val + ")";
+                            alert("find??");
+                        }
+                        
+                        $canvasElement.addClass('canvas-element');
+                        $canvasElement.draggable({
+                            containment:'#droppable_item'   
+                        });
+                        var offset = $(this).offset();
+                        
+                        $canvas.append($canvasElement);
+                        $canvasElement.css({
+                            revert: "invalid",
+                            left: (ui.position.left)-415.2,
+                            top: (ui.position.top),
+                            position: 'absolute'
+                        });
+                    }
+//                    $("#appscrolldiv").append("for i in range 10 ");
+//                    alert("GetID :" + $(this).attr("id"));
+//                    alert("GetID :" + ui.draggable.prop('id'));
+//                    alert("GetID :" + canvasElement.getElementById());
+                    if(currentId=='state-for'){
+                        input = "for i in range " + for_val + ":";
+//                        $("#appscrolldiv").append(input + "<p>");
+                        
+                        // for문이 두번 오는 경우
+                          
+                    }
+                    else if(currentId=='state-if')
+                    {
+                            alert("state-if문이다");
+                            input = "if statement here! &nbsp;";
+                            
+                    }
+                    else if(clone_for.length > 0){
+                            input = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for i in range (" + for_val + ")";
+                            alert("find??");
+                    }
+                    else{};
+                    
+                    if(input.length > 0){
+                        $("#appscrolldiv").append(input + "<p>");
+                    }
+                    else{};
+                    
+                    
+                    // drop 시에 
+                   
+
+                }
+                
+            });
+        });
+          
+        </script>
     </body>
 </html>

@@ -27,8 +27,9 @@
         <!--=================================================-->
         <!--Page Load Progress Bar [ OPTIONAL ]-->
         <link href="plugins/pace/pace.min.css" rel="stylesheet">
+
         <script src="plugins/pace/pace.min.js"></script>
-		<script src="plugins/sign_validator/validator.js"></script>
+		
     </head>
     <!--TIPS-->
     <!--You may remove all ID or Class names which contain "demo-", they are only used for demonstration. -->
@@ -56,7 +57,7 @@
                                 <div class="text-left">
                                     <label for="email" class="control-label">이메일 주소</label>
                                     <input id="email" type="email" placeholder="Enter Email Address" class="form-control" name="email"/>
-									<!--<span id="email_confirm" class="email_confirm"></span>-->
+									<span id="status" class="status"></span>
                                 </div>
                             </div>
                             <div class="form-group col-md-12 col-sm-12 col-xs-12">
@@ -94,6 +95,8 @@
         <!-- END OF CONTAINER -->
         <!--JAVASCRIPT-->
         <!--=================================================-->
+		<script src="plugins/sign_validator/validator.js"></script>
+		<!--<script src="plugins/sign_validator/ERC.js"></script> -->
         <!--jQuery [ REQUIRED ]-->
         <script src="js/jquery-2.1.1.min.js"></script>
         <!--BootstrapJS [ RECOMMENDED ]-->
@@ -113,8 +116,34 @@
         <!--Demo script [ DEMONSTRATION ]-->
         <script src="js/demo/pages-register.js"></script>
 		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>  <!--ajax 구글 api-->
+		<script>
+		
+		var goodColor = "#66cc66";
+		var badColor = "#ff6666";
+		
+		$(document).ready(function() {
+			$('#email').change(function() {
+				var email = $('#email').val();
+				if(email !='')
+				{
+					$.ajax({
+						method:"POST",
+						data:{email:email},
+						//data:{'email':$('#email').val()},
+						url:"<?php echo base_url(); ?>sign_up/email_check",
+						success:function(data) {
+							$('#status').html(data);
+						}
+					});
+				}
+			});
+		});
+		</script>
+		
 		<!-- 비밀번호 확인 스크립트 -->
 		
 		
     </body>
 </html>
+

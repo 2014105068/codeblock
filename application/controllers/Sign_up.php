@@ -61,16 +61,35 @@
 				echo "<a href=sign_up>back page</a>";
 				exit();
 			}
-			else
-			{
 				$data=array(
 						'nickname'	=>$this->input->post("nickname",true),
 						'email'	=>$this->input->post("email",true),
 						'pwd'	=>$this->input->post("pwd",true)
 					);
-			}
+
 			$result=$this->Sign->addmember($data);
+			print "<script type=\"text/javascript\">alert('회원가입이 완료되었습니다.');</script>"; 
 			redirect("/main");
+		}
+		
+		public function email_check()
+		{
+			if(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL))
+			{
+				echo '<label class="text-danger"><span class="glyphicon glyphicon-remove"></span> 이메일이 아닙니다</label>';
+			}
+			
+			else
+			{
+				if($this->Sign->checkM($_POST['email']))
+				{
+					echo '<label class="text-danger"><span class="glyphicon glyphicon-remove"></span>이미 등록된 이메일입니다.</label>';
+				}
+				else
+				{
+					echo '<label class="text-success"><span class="glyphicon glyphicon-ok"></span>사용 가능한 이메일입니다.</label>';
+				}
+			}
 		}
 	}
 ?>

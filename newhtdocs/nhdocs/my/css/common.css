@@ -1,0 +1,36 @@
+.ex-layout{ height: 100%}
+
+#container1{
+    float: left;
+    width: 497px;
+    height: 408px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #aaaaaa;
+}
+
+div.color{
+    background-color:aquamarine; 
+}
+
+#middle{
+    vertical-align: middle;
+    text-align:center;
+    float: left;
+    width: 155px;
+    height: 98px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #aaaaaa;
+}
+
+#container2{
+    float: left;
+    width: 613px;
+    height: 415px;
+   
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #aaaaaa;
+}
+
